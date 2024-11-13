@@ -20,21 +20,38 @@ You have been placed into their development team, whose current goal is to produ
 Unfortunately, two of the team are on annual leave, and another has called in sick!
 You are left with a ThoughtWorker to progress with the current user stories on the story wall. This is your chance to make an impact on the business, improve the code base and deliver value.
 
-## Story Wall
+## Personal Story Wall Training
 
-At JOI energy the development team use a story wall or kanban board to keep track of features or "stories" as they are worked on.
+- [ ] **Implement Price Plan Recommendations Based on Cost Threshold**  
+  Create a method to suggest the cheapest price plan based on a specified cost threshold for a smart meter.
 
-The wall you will be working from today has 7 columns:
+- [ ] **Retrieve Consumption for a Given Date Range**  
+  Extend functionality to fetch electricity readings within a specific date range for reporting or analysis purposes.
 
-- Backlog
-- Ready for Dev
-- In Dev
-- Ready for Testing
-- In Testing
-- Ready for sign off
-- Done
+- [ ] **Add Monthly Aggregation Functionality**  
+  Develop a feature to calculate and aggregate monthly energy consumption for each smart meter.
 
-Examples can be found here https://leankit.com/learn/kanban/kanban-board/
+- [ ] **Add Unit Tests for the Price Calculation Logic**  
+  Write comprehensive tests to validate the accuracy of cost calculations under various scenarios.
+
+- [ ] **Integrate Multi-Rate Pricing Models**  
+  Implement support for peak and off-peak rates in price plans, applying different rates based on time of day.
+
+- [ ] **Refactor to Store Readings Efficiently**  
+  Improve storage efficiency by switching to a more optimized structure or database for storing large datasets of readings.
+
+- [ ] **Implement Caching for Repeated Calculations**  
+  Add a caching mechanism to store the results of frequently requested calculations and reduce repeated processing.
+
+- [ ] **Implement a Batch Processing Service**  
+  Create a service to process readings for multiple smart meters in parallel, useful for bulk calculations and reporting.
+
+- [ ] **Design an API Layer**  
+  Build a REST API to expose functionalities, such as fetching readings, calculating costs, and recommending plans.
+
+- [ ] **Add Error Handling and Validation for Input Data**  
+  Enhance robustness by adding error handling and validation to ensure only valid and correctly formatted data is processed.
+
 
 ## Users
 

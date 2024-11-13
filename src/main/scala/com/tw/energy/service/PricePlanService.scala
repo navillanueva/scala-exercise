@@ -31,4 +31,7 @@ class PricePlanService(pricePlans: Seq[PricePlan], meterReadingService: MeterRea
     }
   }
 
+//  def calculateCheapestPlan(smartMeterId: SmartMeterId, threshold: BigDecimal): Option[PlanName] = {
+//    
+//  }
 }
