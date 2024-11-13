@@ -30,4 +30,5 @@ class PricePlanService(pricePlans: Seq[PricePlan], meterReadingService: MeterRea
       pricePlans.map(plan => plan.planName -> calculateCost(readings, plan)).toMap
     }
   }
+
 }
