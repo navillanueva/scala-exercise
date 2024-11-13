@@ -31,7 +31,11 @@ class PricePlanService(pricePlans: Seq[PricePlan], meterReadingService: MeterRea
     }
   }
 
-//  def calculateCheapestPlan(smartMeterId: SmartMeterId, threshold: BigDecimal): Option[PlanName] = {
-//    
-//  }
+  def calculateCheapestPlan(smartMeterId: SmartMeterId, threshold: BigDecimal): Option[PlanName] = {
+    consumptionCostByPricePlan(smartMeterId).map { planCosts =>
+      val cheapestPlan = planCosts.minBy(_._2)
+      if (cheapestPlan._2 < threshold) cheapestPlan._1 else null
+    }
+  }
+  
 }
